@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TeachShare — Educational Materials Marketplace</title>
+  <meta name="description" content="Buy and sell high-quality educational materials designed by teachers, for teachers. Upload your Canva creations and start earning." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50:  '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+
+  <!-- Nav -->
+  <nav class="bg-white border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <span class="text-xl font-extrabold text-gray-900">TeachShare</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <!-- Update APP_URL below after Vercel deployment -->
+        <a href="#" class="text-gray-600 hover:text-gray-900 font-medium text-sm hidden sm:block">Browse</a>
+        <a href="#" class="bg-brand-600 hover:bg-brand-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors">Get Started Free</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-brand-600 via-brand-700 to-brand-800 text-white py-24 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium mb-8">
+        <span>&#10024;</span>
+        <span>Designed by teachers, for teachers</span>
+      </div>
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight">
+        Share Your Teaching
+        <span class="text-yellow-300 block">Creativity</span>
+      </h1>
+      <p class="text-xl text-green-100 mb-10 max-w-2xl mx-auto leading-relaxed">
+        Upload your Canva-designed worksheets, lesson plans, and activities.
+        Other teachers buy them &mdash; you earn every time.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <!-- Update APP_URL below after Vercel deployment -->
+        <a href="#" class="bg-white text-brand-700 px-8 py-4 rounded-xl font-bold text-lg hover:bg-green-50 transition-colors inline-flex items-center justify-center gap-2">
+          Browse Materials
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#" class="bg-white/10 border-2 border-white/40 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/20 transition-colors">
+          Start Selling Free
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="bg-white border-b border-gray-100 py-8 px-4">
+    <div class="max-w-4xl mx-auto grid grid-cols-3 gap-4 text-center">
+      <div>
+        <p class="text-3xl font-extrabold text-brand-600">10k+</p>
+        <p class="text-gray-500 text-sm mt-0.5">Resources</p>
+      </div>
+      <div>
+        <p class="text-3xl font-extrabold text-brand-600">5k+</p>
+        <p class="text-gray-500 text-sm mt-0.5">Teachers</p>
+      </div>
+      <div>
+        <p class="text-3xl font-extrabold text-brand-600">$50k+</p>
+        <p class="text-gray-500 text-sm mt-0.5">Earned by sellers</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-2">Browse by Category</h2>
+      <p class="text-gray-500 text-center mb-10">Find exactly what your classroom needs</p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <a href="#" class="flex flex-col items-center gap-3 p-5 rounded-xl border-2 bg-blue-50 text-blue-700 border-blue-200 hover:bg-blue-100 transition-colors">
+          <span class="text-3xl">&#128221;</span>
+          <span class="font-semibold text-sm text-center">Worksheets</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-3 p-5 rounded-xl border-2 bg-green-50 text-green-700 border-green-200 hover:bg-green-100 transition-colors">
+          <span class="text-3xl">&#128218;</span>
+          <span class="font-semibold text-sm text-center">Lesson Plans</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-3 p-5 rounded-xl border-2 bg-yellow-50 text-yellow-700 border-yellow-200 hover:bg-yellow-100 transition-colors">
+          <span class="text-3xl">&#127919;</span>
+          <span class="font-semibold text-sm text-center">Activities</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-3 p-5 rounded-xl border-2 bg-purple-50 text-purple-700 border-purple-200 hover:bg-purple-100 transition-colors">
+          <span class="text-3xl">&#127183;</span>
+          <span class="font-semibold text-sm text-center">Flashcards</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-3 p-5 rounded-xl border-2 bg-red-50 text-red-700 border-red-200 hover:bg-red-100 transition-colors">
+          <span class="text-3xl">&#128444;&#65039;</span>
+          <span class="font-semibold text-sm text-center">Posters</span>
+        </a>
+        <a href="#" class="flex flex-col items-center gap-3 p-5 rounded-xl border-2 bg-orange-50 text-orange-700 border-orange-200 hover:bg-orange-100 transition-colors">
+          <span class="text-3xl">&#9989;</span>
+          <span class="font-semibold text-sm text-center">Assessments</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-2">How It Works</h2>
+      <p class="text-gray-500 text-center mb-12">Three steps to start earning from your teaching materials</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="text-center">
+          <div class="bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></svg>
+          </div>
+          <div class="text-4xl font-black text-green-200 mb-2">01</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Design in Canva</h3>
+          <p class="text-gray-500">Create beautiful worksheets, lesson plans, and activities using Canva. Export as a PDF when you're done.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+          </div>
+          <div class="text-4xl font-black text-green-200 mb-2">02</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Upload &amp; Set Your Price</h3>
+          <p class="text-gray-500">Upload your PDF to TeachShare, add a preview image, write a description, and set your price.</p>
+        </div>
+
+        <div class="text-center">
+          <div class="bg-green-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="text-4xl font-black text-green-200 mb-2">03</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Earn Money</h3>
+          <p class="text-gray-500">Teachers discover and buy your materials. Funds are deposited automatically via Stripe.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-16 px-4 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-2">Everything You Need</h2>
+      <p class="text-gray-500 text-center mb-12">A complete marketplace built for educators</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-3xl mb-3">&#127968;</div>
+          <h3 class="font-bold text-gray-900 mb-1">Seller Dashboard</h3>
+          <p class="text-gray-500 text-sm">Track your sales, revenue, and product performance all in one place.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-3xl mb-3">&#128274;</div>
+          <h3 class="font-bold text-gray-900 mb-1">Secure Payments</h3>
+          <p class="text-gray-500 text-sm">Stripe-powered checkout means buyers and sellers are always protected.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-3xl mb-3">&#9889;</div>
+          <h3 class="font-bold text-gray-900 mb-1">Instant Delivery</h3>
+          <p class="text-gray-500 text-sm">Downloads are available immediately after purchase — no waiting.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-3xl mb-3">&#127774;</div>
+          <h3 class="font-bold text-gray-900 mb-1">Canva-First Design</h3>
+          <p class="text-gray-500 text-sm">Built for Canva users — upload your exported PDFs with preview images.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-3xl mb-3">&#128269;</div>
+          <h3 class="font-bold text-gray-900 mb-1">Smart Browsing</h3>
+          <p class="text-gray-500 text-sm">Filter by category, grade level, subject, and price to find the perfect resource.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+          <div class="text-3xl mb-3">&#128197;</div>
+          <h3 class="font-bold text-gray-900 mb-1">Purchase History</h3>
+          <p class="text-gray-500 text-sm">Buyers can re-download any past purchase whenever they need it.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 px-4 bg-brand-700 text-white text-center">
+    <div class="max-w-2xl mx-auto">
+      <div class="w-14 h-14 mx-auto mb-6 flex items-center justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-14 w-14 text-green-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      </div>
+      <h2 class="text-4xl font-bold mb-4">Ready to Share Your Materials?</h2>
+      <p class="text-green-200 text-xl mb-8">Join thousands of teachers earning extra income by sharing their classroom creations.</p>
+      <!-- Update APP_URL below after Vercel deployment -->
+      <a href="#" class="bg-white text-brand-700 px-10 py-4 rounded-xl font-bold text-xl hover:bg-green-50 transition-colors inline-block">
+        Create Free Account
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-10 px-4">
+    <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 bg-brand-600 rounded-md flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <span class="font-bold text-white">TeachShare</span>
+      </div>
+      <p class="text-sm">&copy; 2025 TeachShare. Built for educators everywhere.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#" class="hover:text-white transition-colors">Browse</a>
+        <a href="#" class="hover:text-white transition-colors">Sell</a>
+        <a href="#" class="hover:text-white transition-colors">Sign In</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
